@@ -8,16 +8,16 @@ app = Flask(__name__)
 
 # ===== CONFIGURATION =====
 # Arduino Cloud API Configuration
-ARDUINO_CLIENT_ID = os.environ.get('ARDUINO_CLIENT_ID', 'your_client_id')
-ARDUINO_CLIENT_SECRET = os.environ.get('ARDUINO_CLIENT_SECRET', 'your_client_secret')
-ARDUINO_THING_ID = os.environ.get('ARDUINO_THING_ID', 'your_thing_id')
+ARDUINO_CLIENT_ID = os.environ.get('ARDUINO_CLIENT_ID', 'FZ0WY7sbHVeRwZRqwBKbQ90vf76V5GXi')
+ARDUINO_CLIENT_SECRET = os.environ.get('ARDUINO_CLIENT_SECRET', 'FHBIQZzKsARIKxjoapTvyijDZLnU8lJr5tQ5JPYXocXWJeZZzQvbFTukoDUMZTBb')
+ARDUINO_THING_ID = os.environ.get('ARDUINO_THING_ID', 'cf1908ea-a9df-458b-a040-5d6037b0a9f1')
 
 # Google Sheets Configuration
 # הגדר משתנה סביבה זה ב-Render/Railway!
-GOOGLE_SCRIPT_URL = os.environ.get('GOOGLE_SCRIPT_URL', 'https://script.google.com/macros/s/XXXXX/exec')
+GOOGLE_SCRIPT_URL = os.environ.get('GOOGLE_SCRIPT_URL', 'https://script.google.com/macros/s/AKfycbx_pTrQicE_JveUKCr9UylevUE6HSYm2ueZ_cQbacJnGWVgcJOc38P3v0cRqq7vqzun/exec')
 
 # Variable names from your Arduino Cloud Thing
-RELAY_VARIABLE = "relayStatus" # שם המשתנה מתוך thingProperties.h
+RELAY_VARIABLE = "relay_switch" # שם המשתנה מתוך thingProperties.h
 DISTANCE_VARIABLE = "distance_cm"
 
 # מנגנון שמירת טוקן זמנית
